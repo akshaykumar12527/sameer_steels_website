@@ -37,6 +37,10 @@ This repository now includes a GitHub Actions workflow (`.github/workflows/deplo
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
 4. Wait for the **Deploy static site to GitHub Pages** workflow to complete.
 
-Your live site URL will be:
+Your live site URL format is:
+
+`https://<github-username>.github.io/<repository-name>/`
+
+For this repository, it will be:
 
 `https://akshaykumar12527.github.io/sameer_steels_website/`
