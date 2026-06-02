@@ -1,5 +1,6 @@
 :root {
   --brand: #6aa036;
+  --brand-rgb: 106, 160, 54;
   --dark: #131417;
   --text: #181a1f;
   --muted: #5c6270;
@@ -112,9 +113,9 @@ img {
   min-height: inherit;
   background: linear-gradient(
     90deg,
-    rgba(106, 160, 54, 0.9) 0%,
-    rgba(106, 160, 54, 0.75) 45%,
-    rgba(106, 160, 54, 0.45) 100%
+    rgba(var(--brand-rgb), 0.9) 0%,
+    rgba(var(--brand-rgb), 0.75) 45%,
+    rgba(var(--brand-rgb), 0.45) 100%
   );
 }
 
@@ -160,6 +161,12 @@ img {
 .hero-contact p {
   margin: 0;
   font-size: 1.05rem;
+}
+
+.hero-address {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: normal;
 }
 
 .hero-contact a {
@@ -274,7 +281,7 @@ h3 {
 
 .why-section {
   color: #fff;
-  background: #6aa036;
+  background: var(--brand);
 }
 
 .why-grid {
