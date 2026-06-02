@@ -1,5 +1,6 @@
 :root {
-  --red: #e82424;
+  --brand: #6aa036;
+  --brand-rgb: 106, 160, 54;
   --dark: #131417;
   --text: #181a1f;
   --muted: #5c6270;
@@ -67,7 +68,7 @@ img {
 }
 
 .brand h1 span {
-  color: var(--red);
+  color: var(--brand);
 }
 
 .brand p {
@@ -99,8 +100,8 @@ img {
 
 .nav a.active,
 .nav a:hover {
-  color: var(--red);
-  border-color: var(--red);
+  color: var(--brand);
+  border-color: var(--brand);
 }
 
 .hero {
@@ -110,7 +111,12 @@ img {
 
 .hero-overlay {
   min-height: inherit;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(var(--brand-rgb), 0.9) 0%,
+    rgba(var(--brand-rgb), 0.75) 45%,
+    rgba(var(--brand-rgb), 0.45) 100%
+  );
 }
 
 .hero-content {
@@ -120,7 +126,7 @@ img {
 
 .hero-tag {
   margin: 0;
-  color: var(--red);
+  color: #fff;
   font-size: clamp(2.6rem, 7vw, 4.5rem);
   font-weight: 800;
 }
@@ -138,7 +144,7 @@ img {
 }
 
 .lead span {
-  color: var(--red);
+  color: #fff;
 }
 
 .sublead {
@@ -146,27 +152,30 @@ img {
   font-size: 1.35rem;
 }
 
-.hero-actions {
+.hero-contact {
   margin-top: 1.8rem;
-  display: flex;
-  gap: 0.9rem;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 0.55rem;
 }
 
-.btn {
-  text-decoration: none;
+.hero-contact p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.hero-address {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: normal;
+}
+
+.hero-contact a {
   color: #fff;
-  padding: 0.85rem 1.45rem;
-  border-radius: 8px;
-  font-weight: 700;
+  text-decoration: none;
 }
 
-.btn-call {
-  background: #e62d2d;
-}
-
-.btn-wa {
-  background: #1abf58;
+.hero-contact strong {
+  color: #fff;
 }
 
 .section {
@@ -179,7 +188,7 @@ img {
 
 .section-kicker {
   margin: 0 0 0.6rem;
-  color: var(--red);
+  color: var(--brand);
   letter-spacing: 0.03em;
   font-weight: 800;
   font-size: 0.95rem;
@@ -190,7 +199,7 @@ img {
   display: inline-block;
   width: 34px;
   height: 2px;
-  background: var(--red);
+  background: var(--brand);
   margin-right: 0.55rem;
   vertical-align: middle;
 }
@@ -234,12 +243,12 @@ h3 {
 .icon-row span {
   width: 58px;
   height: 58px;
-  border: 1px solid #efc9c9;
+  border: 1px solid #b9d79c;
   border-radius: 50%;
   display: grid;
   place-items: center;
   margin: 0 auto 0.45rem;
-  color: var(--red);
+  color: var(--brand);
   font-size: 1.45rem;
 }
 
@@ -272,7 +281,7 @@ h3 {
 
 .why-section {
   color: #fff;
-  background: radial-gradient(circle at 20% 20%, #1e2430, #121417 55%);
+  background: var(--brand);
 }
 
 .why-grid {
@@ -284,7 +293,7 @@ h3 {
 .why-grid div {
   text-align: center;
   padding: 0.8rem;
-  border-right: 1px solid #4a4e5a;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .why-grid div:last-child {
@@ -293,7 +302,13 @@ h3 {
 
 .why-grid p {
   margin: 0.4rem 0 0;
-  color: #d5d8df;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-note {
+  color: var(--text);
+  margin: 0;
+  max-width: 34ch;
 }
 
 .contact-grid {
@@ -303,28 +318,10 @@ h3 {
   align-items: center;
 }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-list li {
-  margin-bottom: 0.85rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.contact-list a {
-  color: #1f2430;
-  text-decoration: none;
-}
-
 .site-footer {
   text-align: center;
   color: #fff;
-  background: #0f1217;
+  background: var(--brand);
   padding: 1.2rem;
 }
 
