@@ -9,6 +9,8 @@ if (menuToggle && mainNav) {
   mainNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       mainNav.classList.remove("open");
+      mainNav.querySelectorAll("a").forEach((navLink) => navLink.classList.remove("active"));
+      link.classList.add("active");
     });
   });
 }

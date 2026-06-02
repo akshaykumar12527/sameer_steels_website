@@ -3,126 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sameer Steels | MS Wire Manufacturing</title>
+    <title>Sameer Steels | Manufacturer of MS Wire</title>
     <meta
       name="description"
-      content="Sameer Steels (SS) is an MS wire manufacturing business delivering consistent quality and reliable supply."
+      content="Sameer Steels is a manufacturer of premium quality MS wire with modern manufacturing and timely delivery."
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container nav-wrap">
-        <div class="logo">SS</div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <img src="assets/logo.svg" alt="Sameer Steels logo" />
+          <div>
+            <h1>SAMEER <span>STEELS</span></h1>
+            <p>Manufacturer of MS Wire</p>
+          </div>
+        </a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
         <nav class="nav" id="mainNav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About Us</a>
           <a href="#products">Products</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#why-us">Why Choose Us</a>
-          <a href="#contact">Contact</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#contact">Contact Us</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section class="hero" id="home">
-        <div class="container hero-content">
-          <p class="tag">MS Wire Manufacturing</p>
-          <h1>Sameer Steels</h1>
-          <p>
-            Sameer Steels (SS) transforms high-quality raw material into dependable MS wire for
-            industrial and commercial use.
-          </p>
-          <a class="btn" href="#contact">Get in Touch</a>
+        <div class="hero-overlay">
+          <div class="container hero-content">
+            <p class="hero-tag">SS</p>
+            <h2>SAMEER STEELS</h2>
+            <p class="lead">Manufacturer of Premium Quality <span>MS Wire</span></p>
+            <p class="sublead">Quality. Strength. Reliability.</p>
+            <div class="hero-actions">
+              <a class="btn btn-call" href="tel:+919999999999">📞 Call Now</a>
+              <a class="btn btn-wa" href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">🟢 WhatsApp</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section" id="about">
-        <div class="container">
-          <h2>About Sameer Steels</h2>
-          <p>
-            We are a focused manufacturing business specializing in MS wire production. From raw
-            material procurement to processing and quality checks, we maintain a streamlined
-            workflow to ensure consistency and timely delivery.
-          </p>
+        <div class="container about-grid">
+          <img src="assets/about.svg" alt="Sameer Steels manufacturing unit" class="about-image" />
+          <div>
+            <p class="section-kicker">ABOUT US</p>
+            <h3>Sameer Steels</h3>
+            <p>
+              Sameer Steels is engaged in manufacturing high-quality Mild Steel (MS) wire used in
+              various industrial and construction applications.
+            </p>
+            <p>
+              We use superior quality raw materials and advanced machinery to deliver products that
+              meet global standards.
+            </p>
+            <div class="icon-row">
+              <div><span>🏅</span>Premium Quality</div>
+              <div><span>⚙️</span>Modern Manufacturing</div>
+              <div><span>🚚</span>Timely Delivery</div>
+              <div><span>₹</span>Competitive Pricing</div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section alt" id="products">
+      <section class="section section-light" id="gallery">
         <div class="container">
-          <h2>Products</h2>
-          <div class="cards">
-            <article class="card">
-              <h3>MS Wire</h3>
-              <p>Durable and versatile mild steel wire suitable for multiple applications.</p>
-              <ul>
-                <li>Reliable tensile performance</li>
-                <li>Consistent finish</li>
-                <li>Bulk supply support</li>
-              </ul>
+          <p class="section-kicker center">FACTORY GALLERY</p>
+          <h3 class="center">Our Manufacturing Unit</h3>
+          <div class="card-grid four">
+            <img src="assets/gallery-1.svg" alt="Factory gallery 1" />
+            <img src="assets/gallery-2.svg" alt="Factory gallery 2" />
+            <img src="assets/gallery-3.svg" alt="Factory gallery 3" />
+            <img src="assets/gallery-4.svg" alt="Factory gallery 4" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="products">
+        <div class="container">
+          <p class="section-kicker center">OUR PRODUCTS</p>
+          <h3 class="center">MS Wire</h3>
+          <div class="product-grid">
+            <article>
+              <img src="assets/product-1.svg" alt="MS Wire Coil" />
+              <h4>MS Wire Coil</h4>
+            </article>
+            <article>
+              <img src="assets/product-2.svg" alt="MS Binding Wire" />
+              <h4>MS Binding Wire</h4>
+            </article>
+            <article>
+              <img src="assets/product-3.svg" alt="MS Annealed Wire" />
+              <h4>MS Annealed Wire</h4>
+            </article>
+            <article>
+              <img src="assets/product-4.svg" alt="MS Galvanized Wire" />
+              <h4>MS Galvanized Wire</h4>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="gallery">
+      <section class="section why-section" id="why-us">
         <div class="container">
-          <h2>Factory Gallery</h2>
-          <div class="grid gallery-grid">
-            <div class="placeholder">Factory Image 1</div>
-            <div class="placeholder">Factory Image 2</div>
-            <div class="placeholder">Factory Image 3</div>
+          <p class="section-kicker center">WHY CHOOSE US</p>
+          <div class="why-grid">
+            <div><strong>Quality Raw Material</strong><p>We use best quality raw materials.</p></div>
+            <div><strong>Advanced Technology</strong><p>Modern machines ensure consistent quality.</p></div>
+            <div><strong>Consistent Quality</strong><p>Every product goes through strict quality checks.</p></div>
+            <div><strong>Timely Delivery</strong><p>We value your time and ensure on-time delivery.</p></div>
+            <div><strong>Competitive Pricing</strong><p>Quality products at the most competitive prices.</p></div>
           </div>
         </div>
       </section>
 
-      <section class="section alt" id="end-products">
-        <div class="container">
-          <h2>End Product Photos</h2>
-          <div class="grid gallery-grid">
-            <div class="placeholder">End Product 1</div>
-            <div class="placeholder">End Product 2</div>
-            <div class="placeholder">End Product 3</div>
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-kicker">CONTACT US</p>
+            <h3>Get In Touch</h3>
+            <ul class="contact-list">
+              <li><strong>Address</strong><span>123, Industrial Area, Your City, Your State - 123456</span></li>
+              <li><strong>Phone</strong><a href="tel:+919999999999">+91 99999 99999</a></li>
+              <li><strong>Email</strong><a href="mailto:info@sameersteels.com">info@sameersteels.com</a></li>
+            </ul>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="why-us">
-        <div class="container">
-          <h2>Why Choose Us</h2>
-          <div class="grid reasons-grid">
-            <div class="reason">Quality-focused manufacturing process</div>
-            <div class="reason">Timely and dependable supply</div>
-            <div class="reason">Simple and transparent communication</div>
-            <div class="reason">Customer-first approach for long-term partnerships</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section alt" id="contact">
-        <div class="container">
-          <h2>Contact</h2>
-          <div class="contact">
-            <p><strong>Phone:</strong> <a href="tel:+919999999999">+91 99999 99999</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@sameersteels.com">info@sameersteels.com</a></p>
-            <p><strong>Address:</strong> Add factory address here</p>
-          </div>
+          <img src="assets/map.svg" alt="Sameer Steels map location" class="map-image" />
         </div>
       </section>
     </main>
 
-    <a
-      class="whatsapp-btn"
-      id="whatsappBtn"
-      href="https://wa.me/919999999999"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
-      >WhatsApp</a
-    >
+    <footer class="site-footer">© 2026 Sameer Steels | All Rights Reserved</footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
