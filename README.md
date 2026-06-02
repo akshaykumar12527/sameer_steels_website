@@ -28,4 +28,19 @@ Static landing page for **Sameer Steels (SS)**, an MS wire manufacturing busines
 
 ## GitHub Pages
 
-This project is GitHub Pages ready. Serve the repository root as a static site.
+This repository now includes a GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) that deploys the root static site to GitHub Pages on every push to `main`.
+
+### Make the website live
+
+1. Push your changes to the `main` branch.
+2. In GitHub, go to **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Wait for the **Deploy static site to GitHub Pages** workflow to complete.
+
+Your live site URL format is:
+
+`https://<github-username>.github.io/<repository-name>/`
+
+For this repository, it will be:
+
+`https://akshaykumar12527.github.io/sameer_steels_website/`
